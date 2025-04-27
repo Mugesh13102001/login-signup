@@ -26,7 +26,7 @@ const handleSignup =async (e) => {
         return handleError("All three details required")
     }
     try {
-        const url = "http://localhost:8080/auth/signup";
+        const url = "https://login-signup-api-pi.vercel.app/auth/signup";
         const response = await fetch(url, {
             method: "POST",
             headers: {
